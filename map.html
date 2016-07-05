@@ -1,0 +1,143 @@
+<html>
+   
+   <head>
+      <title>Using JavaScript Image Map</title>
+      <script src="jquery-2.1.4.min.js"></script>
+      <script src="jquery.imagemapster.js"></script>
+   </head>
+   
+   <body>
+      <div style="clear: both; width: 100%; height: 200px; border: 1px solid black;" id="selections"></div>
+      <img id="myimage" src="groupe.jpg" usemap="#mymap">
+      <map id="mymap_map" name="mymap">
+        <area shape="poly" name="carrots" coords="175,74, 170,80, 154,85, 189,103, 190,111, 182,111, 179,98, 157,95, 142,111, 140,128, 38,169, 39,163, 74,143, 74,141, 56,135, 52,115, 79,111, 78,106, 63,98, 71,91, 81,88, 82,83, 91,75, 136,74, 174,70" href="#">
+        <area shape="poly" name="asparagus" coords="224,25, 239,33, 244,36, 247,32, 327,23, 344,31, 343,36, 319,41, 315,42, 302,52, 272,61, 265,64, 270,73, 256,67, 248,60, 187,55, 192,58, 192,60, 184,64, 185,67, 176,67, 173,69, 142,67, 146,63, 135,59, 123,57, 142,44, 145,42, 143,39, 145,32, 207,38, 185,18, 212,19,
+          220,22" href="#">
+        <area shape="poly" name="squash" coords="388,26, 391,38, 394,43, 395,46, 425,58, 427,68, 428,92, 386,125, 371,132, 374,124, 377,118, 374,105, 371,105, 370,107, 364,102, 368,97, 356,87, 353,89, 348,86, 322,87, 314,100, 314,102, 282,85, 278,84, 273,74, 272,68, 319,46, 346,31"
+        href="#">
+        <area shape="poly" name="yellowpepper" coords="237,222, 246,254, 255,291, 262,323, 271,322, 285,350, 306,352, 307,365, 298,374, 285,366, 270,375, 249,378, 244,384, 231,389, 215,373, 210,363, 203,357, 199,368, 184,361, 175,349, 162,356, 140,340, 143,305, 161,252, 168,224, 188,240, 194,223, 198,232, 213,226, 224,224,
+          229,218" href="#">
+        <area shape="poly" name="broccoli" coords="341,89, 342,91, 360,95, 353,100, 360,104, 364,109, 368,115, 369,112, 367,110, 376,111, 373,123, 367,128, 362,128, 359,131, 348,134, 345,137, 340,138, 341,148, 334,167, 323,172, 315,165, 315,162, 312,165, 311,172, 293,167, 292,141, 298,136, 307,134, 322,129, 328,128,
+          329,116, 319,109, 314,104,
+          317,93, 332,84" href="#">
+        <area shape="poly" name="dip" coords="253,102, 277,100, 280,105, 290,107, 295,111, 304,130, 290,140, 287,147, 240,157, 238,159, 227,153, 203,146, 198,125, 200,116, 214,102, 231,102" href="#">
+        <area shape="poly" name="redguy" coords="616,313, 617,298, 624,271, 628,246, 622,217, 618,214, 618,176, 621,165, 646,152, 651,145, 647,136, 644,119, 640,113, 643,107, 643,95, 652,87, 667,81, 680,85, 691,96, 691,111, 690,121, 686,126, 684,127, 683,137, 684,140, 688,142, 693,148, 726,167, 729,174, 733,189, 732,219, 733,249, 735,253, 732,255, 708,287, 708,324, 704,349, 702,377, 698,395, 700,416, 703,437, 700,446, 695,469, 696,485, 701,497, 696,504, 696,517, 693,522, 684,521, 675,519, 669,504, 668,496, 671,491, 668,482, 668,470, 670,445, 673,427, 674,421, 667,378, 663,361, 655,349, 654,370, 657,393, 655,413, 654,442, 653,473, 649,488, 642,497, 624,501, 612,502, 601,498, 608,489, 617,480, 618,473, 617,462, 620,444, 620,429, 624,425, 625,415, 627,409, 624,405, 620,367, 616,338, 616,312" href="#">
+        <area shape="poly" name="girl" coords="403, 293, 399, 285, 395, 277, 396, 273, 397, 271, 400, 239, 402, 234, 404, 229, 405, 210, 406, 191, 407, 177, 408, 172, 411, 167, 422, 163, 422, 159, 425, 151, 425, 146, 425, 140, 427, 127, 428, 119, 430, 110, 437, 104, 450, 101, 462, 107, 467, 115, 472, 131, 477, 145, 481, 159, 485, 166, 496, 173, 501, 177, 502, 186, 500, 189, 498, 193, 493, 205, 491, 215, 489, 222, 489, 233, 488, 250, 486, 259, 485, 270, 487, 283, 487, 293, 486, 306, 482, 316, 478, 324, 478, 334, 475, 343, 474, 354, 471, 363, 470, 372, 470, 383, 469, 395, 466, 406, 462, 412, 460, 421, 462, 433, 463, 443, 462, 450, 457, 456, 457, 462, 453, 470, 448, 473, 443, 469, 439, 464, 435, 453, 431, 451, 424, 454, 421, 459, 412, 465, 405, 469, 401, 469, 399, 468, 399, 463, 403, 457, 408, 449, 412, 443, 410, 431, 407, 410, 407, 390, 408, 373, 405, 356, 402, 335, 402, 317, 401, 317, 403, 295" href="#">
+        <area shape="poly" name="guy" coords="497, 345, 494, 345, 486, 333, 488, 319, 489, 309, 488, 298, 488, 282, 486, 260, 491, 239, 490, 226, 494, 209, 500, 190, 507, 183, 521, 175, 526, 172, 532, 165, 533, 158, 532, 154, 529, 147, 528, 142, 526, 134, 525, 122, 529, 114, 540, 108, 556, 106, 567, 116, 570, 121, 569, 131, 567, 145, 564, 146, 561, 155, 562, 165, 567, 170, 577, 176, 589, 183, 597, 190, 601, 198, 604, 211, 606, 225, 606, 236, 606, 252, 607, 265, 605, 278, 603, 291, 600, 304, 600, 320, 597, 336, 596, 339, 592, 343, 591, 354, 592, 363, 592, 375, 586, 382, 586, 389, 588, 399, 583, 403, 585, 413, 582, 425, 580, 434, 577, 447, 575, 457, 575, 460, 576, 468, 580, 474, 583, 480, 586, 486, 583, 489, 579, 490, 573, 491, 564, 488, 561, 481, 557, 468, 560, 458, 560, 445, 558, 427, 557, 415, 557, 403, 548, 397, 544, 382, 545, 360, 542, 339, 542, 362, 535, 379, 532, 396, 528, 400, 529, 417, 525, 430, 523, 441, 523, 453, 526, 464, 523, 471, 515, 478, 510, 480, 500, 479, 495, 479, 493, 477, 497, 470, 502, 464, 509, 457, 509, 444, 505, 421, 502, 401, 500, 393, 499, 373, 497, 357, 498, 346" href="#">
+
+      </map>
+
+      <script type="text/javascript">
+
+              // a cross reference of area names to text to be shown for each area
+                var xref = {
+                    carrots: "<b>Carrots</b> are delicious and may turn your skin orange!",
+                    asparagus: "<b>Asparagus</b> is one of the first vegetables of the spring. " 
+                        +"Being a dark green, it's great for you, and has interesting side effects.",
+                    squash: "<b>Squash</b> is a winter vegetable, and not eaten raw too much. Is that really squash?",
+                    redpepper: "<b>Red peppers</b> are actually the same as green peppers, they've just been left on "
+                        +"the vine longer. Delicious when fire-roasted.",
+                    yellowpepper: "Similar to red peppers, <b>yellow peppers</b> are sometimes sweeter.",
+                    guy: "<b>guy</b>",
+                    cucumbers: "<b>Cucumbers</b> are cool.",
+                    broccoli: "<b>Broccoli</b> is like a forest of goodness in your mouth. And very good for you. "
+                        +"Eat lots of broccoli!",
+                    dip: "Everything here is good for you but this one. <b>Don't be a dip!</b>",
+                    redguy: "<b>Red guy</b>",
+                    girl: "<b>Girl</b>"
+                };
+                
+                var defaultDipTooltip = 'I know you want the dip. But it\'s loaded with saturated fat, just skip it '
+                    +'and enjoy as many delicious, crisp vegetables as you can eat.';
+                
+                var image = $('#myimage');
+
+                image.mapster(
+                {
+                    fillOpacity: 0.3,
+                    fillColor: "d42e16",
+                    stroke: true,
+                    strokeColor: "1800FF",
+                    strokeOpacity: 0,
+                    strokeWidth: 1,
+                    singleSelect: true,
+                    mapKey: 'name',
+                    listKey: 'name',
+                    onClick: function (e) {
+                        var newToolTip = defaultDipTooltip;
+                        console.log(e);
+                        // update text depending on area selected
+                        $('#selections').html(xref[e.key]);
+                        
+                        // if Asparagus selected, change the tooltip
+                        if (e.key === 'asparagus') {
+                            newToolTip = "OK. I know I have come down on the dip before, but let's be real. "
+                                +"Raw asparagus without any of that delicious ranch and onion dressing "
+                                +"slathered all over it is not so good.";
+                        }
+                        /*image.mapster('set_options', { 
+                            areas: [{
+                                key: "dip",
+                                toolTip: newToolTip
+                                }]
+                            });*/
+                    },
+                    showToolTip: true,
+                    toolTipClose: ["tooltip-click", "area-click"],
+                    areas: [
+                        {
+                            key: "girl",
+                            fillColor: "ffffff"
+                        },
+                        {
+                            key: "guy",
+                            fillColor: "ffffff"
+                        },
+                        {
+                            key: "yellowpepper",
+                            fillColor: "ffffff"
+                        },
+                        {
+                            key: "carrots",
+                            fillColor: "ffffff"
+                        },
+                        {
+                            key: "dip",
+                            fillColor: "ffffff"
+                        },
+                        {
+                            key: "asparagus",
+                            fillColor: "ffffff"
+                        },
+                        {
+                            key: "redguy",
+                            fillColor: "ffffff"
+                        }
+                        ]
+                });
+
+                var array = [];
+
+                $( "#myimage" ).click(function( e ) {
+                  var offset = $(this).offset();
+                  var x = e.pageX - offset.left;
+                  var y = e.pageY - offset.top;
+                  //console.log(x, y);
+                  array.push(x);
+                  array.push(y);
+                  console.log(array);
+                  var display;
+                  for(var i=0;i<array.length;i++){
+                    if(i==0){
+                      display = array[i];
+                    }
+                    else{
+                      display = display + ", " + array[i];
+                    }
+                  }
+                  $('#selections').html(display);
+                });
+      </script>
+
+   </body>
+</html>
